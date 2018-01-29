@@ -11,13 +11,11 @@ It is advised to install Multi-Stage on a virtual machine, you can download [Vir
 To install Multi-Stage you need a web server with PHP support and a MySQL database.
 
 ### Ubuntu
-
-Update the packages list
-```sudo apt update```
-
 Install Apache, PHP and MySQL server
 
-```sudo apt install apache2 php5 libapache2-mod-php5 php5-mysql mysql-server```
+```
+sudo apt install apache2 php5 libapache2-mod-php5 php5-mysql mysql-server
+```
 
 ## Installation
 To use Multi-Stage just clone the master branch into the main forlder of your
