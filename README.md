@@ -4,7 +4,7 @@ Multi-Stage is a PHP/MySQL web application that was written without taking secur
 
 
 ## WARNING
-DO NOT UPLOAD OR DEPLOY Multi-Stage ON ANY PUBLIC HTML FOLDER OR INTERNET ACCESSIBLE SERVER AS IT MIGHT BE COMPROMISED.  It is adviced to run Multi-Stage on a virtual machine with restricted remote access.
+**DO NOT UPLOAD OR DEPLOY Multi-Stage ON ANY PUBLIC HTML FOLDER OR INTERNET ACCESSIBLE SERVER AS IT MIGHT BE COMPROMISED.  It is adviced to run Multi-Stage on a virtual machine with restricted remote access.**
 
 ## Requirements 
 It is advised to install Multi-Stage on a virtual machine, you can download [VirtualBox](https://www.virtualbox.org/) and [Ubuntu](https://www.ubuntu.com/download/desktop) and setup a virtual environment where to test Multi-Stage.
@@ -23,12 +23,16 @@ web server.
 
 Create a database for Multi-Stage:
 
-```mysql> CREATE DATABASE <db_name>;```
-```mysql> exit;```
+```
+mysql> CREATE DATABASE <db_name>;
+mysql> exit;
+```
 
 Import the example table into the database
 
-```mysql -u <mysql_user> -p -h localhost  <db_name> < users.sql```
+```
+mysql -u <mysql_user> -p -h localhost  <db_name> < users.sql
+```
 
 Edit the configuration file `config.inc.php` with the configuration of your local MySQL installation.
 
