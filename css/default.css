@@ -1,0 +1,101 @@
+
+/*-  reset
+-------------------------------------------------------------------------------------------------------- */
+ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var,
+ b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+ thead, tr, th, td, article, aside, canvas, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video                    { background-color:transparent;  border:0; font-family:inherit; font-weight:inherit; font-style:inherit; font-size:100%; margin:0; outline:0; padding:0; vertical-align:baseline; }
+ :focus  /* remember to define focus styles! */                                                   { outline: 0; }
+ body                                                                                             { line-height:1;  }
+ article, aside, details, dialog, figure, footer, header, hgroup, nav, section                    { display:block; }
+ ol, ul                                                                                           { list-style-position: inside;  }
+ nav ul                                                                                           { list-style:none;   }
+ blockquote, q                                                                                    { quotes:none; }
+ blockquote:before, blockquote:after, q:before, q:after                                           { content:''; }
+ a                                                                                                { cursor:pointer; margin:0;  padding:0;  border:0;  font-size:100%; vertical-align:baseline; background:transparent;  text-decoration:none;   }
+ ins                                                                                              { background-color:#ff9; color:#000; text-decoration:none;  }
+ mark                                                                                             { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+ del                                                                                              { text-decoration: line-through; }
+ abbr[title], dfn[title]                                                                          { border-bottom:1px dotted #000;   cursor:help; }
+ table                                                                                            { border-collapse:collapse; border-spacing:0; }
+ hr                                                                                               { display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0;  padding:0;  }
+ input, select                                                                                    { vertical-align:middle; }
+ textarea                                                                                         { overflow:auto;}
+ 
+ /*- these selection declarations have to be separate
+ /*- no text-shadow: <twitter.com/miketaylr/status/12228805301>
+ /*_ reference http://camendesign.com
+ -------------------------------------------------------------------------------------------------------- */
+ ::-moz-selection                                                                                 {background-color: #aab; color: #eee; text-shadow: none;}
+ ::selection                                                                                      {background-color: #aab; color: #eee; text-shadow: none;}
+/* ----------------------------------------------------------------------------------------------------- */
+
+/*-  Typography
+-------------------------------------------------------------------------------------------------------- */
+
+
+ body                                                                                             { font-size:100%; line-height:1.25em; }
+ body                                                                                             { font: 16px/1.5 "CartoGothicStd", "Myriad Pro", Arial, Helvetica, Tahoma, sans-serif;  }
+ h1                                                                                               { font-size: 2.5em; line-height: 1.185; margin: 1.84em 0; }
+ h2                                                                                               { font-size: 2em; line-height: 1.5; margin-top: 1.5em;}
+ h3                                                                                               { font-size: 1.5em; line-height: 2; margin-top: 1em;  }
+ 
+ h4,
+ nav.primary a                                                                                    { font-size: 1.25em; line-height: 2.4; margin-top: 0;  }
+
+
+
+
+ .show-rythm {
+  background-image: -webkit-gradient(linear, 0 0, 0 100%,                             
+               color-stop(.05, #cce), color-stop(.05, transparent),
+               to(transparent)); 
+  background-image: -moz-linear-gradient(#cce 5%, transparent 5%, transparent);
+  background-image: -o-linear-gradient(#cce 5%, transparent 5%, transparent);
+  background-image: linear-gradient(#cce 5%, transparent 5%, transparent);
+  height: 100%; 
+  background-size: 100% 1.5em; 
+  background-position: fixed;
+ }
+
+
+
+.divider                                                                                           { border:solid 0 ; clear:both;  height:1px; margin:-1px 0  0  ; padding:0;  opacity: 0.0;   filter: alpha(opacity = 0); }
+
+
+/*- Layout
+-------------------------------------------------------------------------------------------------------- */
+
+#wrapper 																{width: 580px; margin:40px auto;}
+h3 																		{font-family: "Arial"}
+a 																		{color: #FF0080; font-size: 0.8em}
+
+#login 																	{width:300px;padding-left:20px ; border-left: 1px solid #D8D8D8;float: left}
+#logo 																	{width: 200px; float: left;text-align:center}
+
+.label 																	{color: #6E6E6E;font-size: 0.8em;display: block; margin-top: 15px}
+
+.text-input																{width: 300px; height: 20px; border: 1px solid  #D8D8D8; padding: 5px; font-size: 0.9em; }
+.placeholder 															{position: absolute;}
+#button 														{background: #00BFFF; border: 1px solid #084B8A ;padding:0;width: 312px; color: #FFFFFF;height: 30px;margin-top: 25px}
+
+header 																{background: #CEE3F6; color: #000; padding: 5px}
+
+#line-top																{background: #F2F2F2; width: 100%; color: #6E6E6E; font-family: "Arial"}
+#welcome																{padding: 10px; float:left;}
+#user 																	{color: #2ECCFA; font-style: italic;}
+
+#logout																	{text-align: right; float: right;padding: 10px}
+
+#view-profile 															{color: #FFFFFF;width: 300px; margin:30px auto; text-align: center;padding: 20px; border: 1px solid #D8D8D8}
+
+.button 																{background: #00BFFF; border: 1px solid #FFF ;padding:0; width:50px ;color: #FFFFFF;height: 20px;margin-top: 6px}
+
+.h 																		{height: 5px}
+
+#error 																	{width: 100%; padding: 10px 0; text-align: center;background: #B40404; color: #F6CECE; font-style: italic}
+
+#success 																	{width: 100%; padding: 10px 0; text-align: center;background: #5ABE75; color: #11782D; font-style: italic}
+table 																	{width: 100%}
+.col1																	{width: 100px}
