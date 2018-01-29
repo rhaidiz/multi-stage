@@ -27,6 +27,7 @@ Create a database for Multi-Stage:
 ```mysql> exit;```
 
 Import the example table into the database
+
 ```mysql -u <mysql_user> -p -h localhost  <db_name> < users.sql```
 
 Edit the configuration file `config.inc.php` with the configuration of your local MySQL installation.
